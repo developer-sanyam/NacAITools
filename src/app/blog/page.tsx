@@ -14,7 +14,7 @@ const blogPosts = [
     author: "Dr. Sarah Johnson",
     date: "May 12, 2025",
     readTime: "8 min read",
-    image: "/placeholder.png",
+    image: "/tools/ai-transforming-education.png",
     slug: "how-ai-is-transforming-education-2025",
   },
   {
@@ -26,7 +26,7 @@ const blogPosts = [
     author: "Michael Chen",
     date: "May 8, 2025",
     readTime: "6 min read",
-    image: "/placeholder.png",
+    image: "/tools/ai-tools-students.png",
     slug: "10-ai-tools-every-student-should-use",
   },
   {
@@ -38,7 +38,7 @@ const blogPosts = [
     author: "Prof. James Wilson",
     date: "May 5, 2025",
     readTime: "10 min read",
-    image: "/placeholder.png",
+    image: "/tools/ethics-of-ai.png",
     slug: "ethics-of-ai-in-academic-settings",
   },
   {
@@ -50,7 +50,7 @@ const blogPosts = [
     author: "Dr. Emily Rodriguez",
     date: "April 30, 2025",
     readTime: "7 min read",
-    image: "/placeholder.png",
+    image: "/tools/ai-research-process.png",
     slug: "use-ai-to-improve-research-process",
   },
   {
@@ -62,7 +62,7 @@ const blogPosts = [
     author: "Alex Thompson",
     date: "April 25, 2025",
     readTime: "9 min read",
-    image: "/placeholder.png",
+    image: "/tools/ai-generated-content.png",
     slug: "future-of-ai-generated-content-academia",
   },
   {
@@ -74,7 +74,7 @@ const blogPosts = [
     author: "Maria Garcia",
     date: "April 20, 2025",
     readTime: "8 min read",
-    image: "/placeholder.png",
+    image: "/tools/teachers-adapting-ai.png",
     slug: "teachers-adapting-to-ai-classroom",
   },
 ]
@@ -91,7 +91,7 @@ export default function BlogPage() {
 
       {/* Featured Post */}
       <div className="mb-16">
-        <Card className="overflow-hidden">
+        <Card className="overflow-hidden py-0">
           <div className="grid md:grid-cols-2 gap-0">
             <div className="relative h-64 md:h-auto">
               <Image
@@ -130,7 +130,7 @@ export default function BlogPage() {
       {/* Blog Post Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.slice(1).map((post) => (
-          <Card key={post.id} className="flex flex-col h-full overflow-hidden">
+          <Card key={post.id} className="flex flex-col h-full overflow-hidden pt-0">
             <div className="relative h-48">
               <Image src={post.image || "/placeholder.png"} alt={post.title} fill className="object-cover" />
             </div>

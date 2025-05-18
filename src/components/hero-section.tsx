@@ -131,7 +131,7 @@ const HeroSection = () => {
                         <div className="relative rounded-lg overflow-hidden shadow-2xl">
                             <div className="aspect-video relative">
                                 <Image
-                                    src="/placeholder.png"
+                                    src="/AILearningPlatformDashboard.png"
                                     alt="AI Learning Platform Dashboard"
                                     width={800}
                                     height={600}
